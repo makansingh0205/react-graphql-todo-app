@@ -1,0 +1,41 @@
+.user-details-wrapper {
+    padding: 48px 0;
+}
+
+.user-details{
+    text-align: left;
+    &__list {
+        padding: 12px 0;
+        &-label {
+            display: block;
+            font-weight: 500;
+            margin: 0;
+        }
+        h4 {
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+    &__item {
+        border-bottom: 1px solid #e2eae9;
+        padding: 12px 0;
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+    &__avtar {
+        padding: 0 0 12px 0;
+        .user-details__list-label {
+            margin-top: 8px;
+        }
+    }
+}
+.user-listing{
+    td {
+        .small-text{
+            display: block;
+            font-size: 13px;
+            color: #666;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+nav.navbar.navbar-light.bg-custom {
+    background-color: #e6ebef;
+    padding: 0;
+}
+.page-header {
+    padding: 24px 0;
+    &__title {
+        font-size: 18px;
+        margin: 0;
+    }
+    &__back-btn {
+        background-color: #dce3eb;
+        border: none;
+        min-width: 50px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 0;
+        padding: 12px;
+        font-size: 24px;
+        justify-content: center;
+        color: #000;
+        text-decoration: none;
+        &:hover, &:focus, &:active{
+            outline: none;
+            text-decoration: none;
+            color: #2ca5c2;
+        }
+    }
+}

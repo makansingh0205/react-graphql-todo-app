@@ -1,0 +1,23 @@
+.todo-list__content-list {    
+        padding: 0;
+        margin: 0;
+        .todo-list__item {
+            display: block;
+            &--content {
+                display: flex;
+                justify-content: space-between;
+                margin: 0;
+                border-bottom: 1px solid #e2eae9;
+                padding: 8px 0;
+                align-items: center;
+                align-content: center;
+                .todo-list__item--text {
+                    margin: 0;
+                }
+            }
+            &--action {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+}
