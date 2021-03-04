@@ -47,7 +47,7 @@ function UserDetails() {
     const userDetailData = data !== undefined ? data['user'] : null;
   return (
     <div className="page-body-wrapper">
-        <Header />       
+        <Header title="Back to Users" showBackBtn={true} />       
         <div className="user-details-wrapper">  
         <Container>
             <Row>

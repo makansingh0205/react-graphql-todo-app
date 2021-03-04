@@ -33,7 +33,7 @@ function UserListing() {
     const userListingData = data !== undefined ? data['users'].data : [];
   return (
     <div className="page-body-wrapper">
-        <Header />       
+        <Header  title="Users List" showBackBtn={false}  />       
         <div className="user-details-wrapper">  
         <Container>
             <Row>
