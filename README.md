@@ -6,6 +6,10 @@ To-do app built with React and GraphQL.
 
 This project is currently in development.
 
+# Demo Screen
+![to-do-app-user-list-screenshot](https://user-images.githubusercontent.com/71586631/110042489-db59cc00-7d6b-11eb-9f6e-95374fc5e8d7.png)
+![to-do-app-user-details-screenshot](https://user-images.githubusercontent.com/71586631/110042481-d8f77200-7d6b-11eb-97ae-7a407960175d.png)
+
 # Installation and Setup Instructions
 
 Below you will find some information on how to perform Installation and Setup tasks.<br>
