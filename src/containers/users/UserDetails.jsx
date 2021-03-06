@@ -5,46 +5,18 @@ import Header from '../../components/header/Header';
 import NoDataFound from '../../components/no-data-found/NoDataFound';
 import './style.scss';
 import TodoList from '../../containers/todos/TodoList';
-import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
 import { useParams } from "react-router-dom";
-
-const GET_USER_DETAILS = gql`
-  query User($id: ID!) {
-    user(id: $id) {
-        id
-        name
-        username
-        email
-        website,
-        phone
-        address {
-          street
-          suite
-          city
-          zipcode
-        }
-      todos(options:{paginate:{ page : 1, limit:8}}) {
-        data {
-          id
-          title
-          completed
-        }
-        meta {
-          totalCount
-        }
-      }
-    }
-  }
-`;
+import {GET_USER_DETAILS} from '../../graphql-query/userQueries';
 
 function UserDetails() {
     let params = useParams();
     let id = params.userID;
-    const { loading, error, data } = useQuery(GET_USER_DETAILS, {
-    variables: { id }
+    const { loading, data } = useQuery(GET_USER_DETAILS, {
+        variables: { id }
     });
     const userDetailData = data !== undefined ? data['user'] : null;
+    
   return (
     <div className="page-body-wrapper">
         <Header title="Back to Users" showBackBtn={true} />       

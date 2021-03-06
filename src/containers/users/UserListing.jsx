@@ -4,29 +4,8 @@ import Header from '../../components/header/Header';
 import NoDataFound from '../../components/no-data-found/NoDataFound';
 import './style.scss';
 import { NavLink } from 'react-router-dom';
-import gql from 'graphql-tag';
 import { useQuery } from '@apollo/react-hooks';
-
-const GET_USER_LIST = gql `
-query UsersPage {
-    users {
-     data {
-        id
-        name
-        username
-        email
-        address {
-            city
-        }
-        company {
-            name
-        }
-        phone
-        website
-        }
-    }    
-  }
-`
+import {GET_USER_LIST} from '../../graphql-query/userQueries'
 
 function UserListing() {
     const {loading, data } = useQuery(GET_USER_LIST);
